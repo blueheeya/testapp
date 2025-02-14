@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,
+li,
+ol {
+    list-style: none;
+}
+section {
+    margin: 0 auto;
+    max-width: 1440px;
+    background: #ccc;
+}
+/*메인 게시글 공통*/
+.mainBoardWrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 50px;
+}
+.borderWrap {
+    width: 100%;
+    background: #fff;
+}
+.borderWrap .borderTtBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #ccc;
+}
+.borderWrap .borderTtBox h3 {
+    font-size: 24px;
+}
+.borderWrap .borderDate {
+    font-size: 16px;
+    color: #666;
+}
+/*메인 - 공지사항*/
+.noticeBox {
+}
+.noticeBox li {
+    padding: 10px 0;
+}
+.noticeBox ul {
+    display: flex;
+    justify-content: space-between;
+    background: rebeccapurple;
+}
+/*메인 - 채용공고*/
+.recruitBox {
+}
+.recruitBox ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 0;
+    border-bottom: solid 1px #ccc;
+}
+.recruitBox ul li.data {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 5px 0;
+    background: chartreuse;
+}
+.recruitBox ul li span.recruitHistory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 30px;
+    padding: 10px 2px;
+    border-radius: 3px;
+    background: orange;
+}
+.recruitBox .borderDate {
+    margin-left: calc(30px + 60px);
+}
+.viewTb {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.viewTb tr:first-child {
+    border-top: solid 3px #222;
+}
+.viewTb th,
+.viewTb td {
+    padding: 10px;
+    border: solid 1px #eee;
+}
+@media (max-width: 768px) {
+    /*메인 게시글 공통*/
+    .mainBoardWrap {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+}
