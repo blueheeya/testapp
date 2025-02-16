@@ -11,7 +11,6 @@ ol {
 section {
     margin: 0 auto;
     max-width: 1440px;
-    background: #ccc;
 }
 /*메인 게시글 공통*/
 .mainBoardWrap {
@@ -22,7 +21,6 @@ section {
 }
 .borderWrap {
     width: 100%;
-    background: #fff;
 }
 .borderWrap .borderTtBox {
     display: flex;
@@ -46,7 +44,6 @@ section {
 .noticeBox ul {
     display: flex;
     justify-content: space-between;
-    background: rebeccapurple;
 }
 /*메인 - 채용공고*/
 .recruitBox {
@@ -64,7 +61,6 @@ section {
     gap: 30px;
     width: 100%;
     padding: 5px 0;
-    background: chartreuse;
 }
 .recruitBox ul li span.recruitHistory {
     display: flex;
@@ -91,6 +87,28 @@ section {
 .viewTb td {
     padding: 10px;
     border: solid 1px #eee;
+}
+.layerPopup {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1000;
+    min-width: 150px;
+    border-radius: 4px;
+}
+
+/* IBSheet와 함께 사용할 경우의 추가 스타일 */
+#layerPopup:before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    border-bottom: 8px solid #fff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
 }
 @media (max-width: 768px) {
     /*메인 게시글 공통*/
