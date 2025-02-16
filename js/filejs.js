@@ -1,3 +1,5 @@
+// filejs.js 파일에 추가할 함수들
+
 /**
  * 요소의 절대 위치를 구하는 함수 (iOS 호환)
  * @param {HTMLElement} el - 위치를 찾을 요소
@@ -36,12 +38,12 @@ function getViewportScale() {
 }
 
 /**
- * 레이어 팝업을 지정된 요소 근처에 표시하는 함수
+ * 레이어 팝업을 요소 아래 및 화면 가로 중앙에 표시하는 함수
  * @param {HTMLElement} targetEl - 기준이 될 요소 (첨부파일 링크)
  * @param {HTMLElement} popupEl - 표시할 레이어 팝업 요소
  */
 function showLayerPopupNearElement(targetEl, popupEl) {
-    // 1. 기준 요소의 위치 구하기
+    // 1. 기준 요소의 위치 구하기 (세로 위치만 사용)
     var pos = getElementPosition(targetEl);
 
     // 2. iOS에서 추가 보정
@@ -49,28 +51,25 @@ function showLayerPopupNearElement(targetEl, popupEl) {
         var scale = getViewportScale();
         // iOS에서는 scale 값을 고려해야 함
         pos.top = pos.top * scale;
-        pos.left = pos.left * scale;
     }
 
-    // 3. 팝업이 화면 밖으로 나가지 않도록 조정
-    var popupWidth = popupEl.offsetWidth;
+    // 3. 팝업 크기와 화면 크기 가져오기
     var popupHeight = popupEl.offsetHeight;
     var windowWidth = window.innerWidth;
     var windowHeight = window.innerHeight;
 
-    // 3-1. 오른쪽 경계 체크
-    if (pos.left + popupWidth > windowWidth) {
-        pos.left = windowWidth - popupWidth - 10; // 10px 여백
+    // 4. 가로 중앙 위치 계산 - 여기에서는 JavaScript로 설정하지 않음
+    // CSS의 left: 50%, transform: translateX(-50%)로 처리
+
+    // 5. 세로 위치 조정 (화면 아래쪽 경계 체크)
+    var topPosition = pos.top + targetEl.offsetHeight;
+    if (topPosition + popupHeight > windowHeight) {
+        topPosition = pos.top - popupHeight; // 팝업을 위로 표시
     }
 
-    // 3-2. 아래쪽 경계 체크
-    if (pos.top + popupHeight > windowHeight) {
-        pos.top = pos.top - popupHeight; // 팝업을 위로 표시
-    }
-
-    // 4. 최종 위치 설정
-    popupEl.style.top = pos.top + targetEl.offsetHeight + "px"; // 링크 바로 아래에 표시
-    popupEl.style.left = pos.left + "px";
+    // 6. 최종 위치 설정
+    popupEl.style.top = topPosition + "px";
+    // left는 CSS에서 처리하므로 여기서 설정하지 않음
     popupEl.style.display = "block";
 }
 
