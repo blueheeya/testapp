@@ -59,7 +59,7 @@ section {
     border-bottom: solid 1px #ccc;
 }
 .borderWrap .borderTtBox h3 {
-    font-size: 24px;
+    font-size: 21px;
 }
 .borderWrap .borderDate {
     font-size: 16px;
@@ -149,6 +149,7 @@ section {
 /*report style*/
 .reportWrap {
     width: 100%;
+    margin-bottom: 70px;
 }
 .reportWrap h3 {
     margin: 70px 0 16px 0;
@@ -249,7 +250,7 @@ section {
     }
     .graphGrid2 {
         flex-direction: column;
-        gap: 40px;
+        gap: 60px;
     }
     .imgBox img {
         min-width: 100% !important;
