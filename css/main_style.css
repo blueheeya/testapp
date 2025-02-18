@@ -152,11 +152,26 @@ section {
     margin-bottom: 70px;
 }
 .reportWrap h3 {
+    position: relative;
     margin: 70px 0 16px 0;
     font-size: 30px;
     font-weight: 500;
     text-align: center;
     color : #26447D !important;
+}
+.reportWrap h3 span {
+    position: relative;
+    width: fit-content;
+}
+.reportWrap h3 span::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 17px;
+    bottom: 0;
+    left: 0;
+    background: #d4eafd;
+    z-index: -2;
 }
 .graphWrap {
     display: flex;

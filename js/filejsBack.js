@@ -1,3 +1,5 @@
+
+
 function fileDivHide(){ 
 
 	$("#fileDownDiv").hide();  
@@ -12,12 +14,15 @@ function fileDown(saveFileNm,attachFileNm){
 
 	$.download("../file/fileDown.html"
 
-				,'propPath=file.path&saveFileNm='+encodeURIComponent(saveFileNm)+'&attachFileNm='+encodeURIComponent(attachFileNm),"post" ); 
+				// ,'propPath=file.path&saveFileNm='+encodeURIComponent(saveFileNm)+'&attachFileNm='+encodeURIComponent(attachFileNm),"post" ); 
+				,"post" ); 
 
 }
 
 function fileSearch(url,param,row,col,$obj){
 	var fcelly = $(".viewTb > tbody > tr:eq("+row+")").position().top;
+    var fcellRect = $(“.GMPageOne > table > tbody > tr:eq(“+row+”)”)[0].getBoundingClientRect();
+    var fcelly = fcellRect.top + window.scrollY; // iOS에서도 정확한 위치 반환
 	$.ajax({
 
                type: "POST",

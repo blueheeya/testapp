@@ -44,29 +44,30 @@ function getViewportScale() {
  */
 function showLayerPopupNearElement(targetEl, popupEl) {
     // 1. 기준 요소의 위치 구하기 (세로 위치만 사용)
-    var pos = getElementPosition(targetEl);
+    // var pos = getElementPosition(targetEl);
 
-    // 2. iOS에서 추가 보정
-    if (isIOS()) {
-        var scale = getViewportScale();
-        // iOS에서는 scale 값을 고려해야 함
-        pos.top = pos.top * scale;
-    }
+    // // 2. iOS에서 추가 보정
+    // if (isIOS()) {
+    //     var scale = getViewportScale();
+    //     // iOS에서는 scale 값을 고려해야 함
+    //     pos.top = pos.top * scale;
+    // }
 
-    // 3. 팝업 크기와 화면 크기 가져오기
-    var popupHeight = popupEl.offsetHeight;
-    var windowWidth = window.innerWidth;
-    var windowHeight = window.innerHeight;
+    // // 3. 팝업 크기와 화면 크기 가져오기
+    // var popupHeight = popupEl.offsetHeight;
+    // var windowWidth = window.innerWidth;
+    // var windowHeight = window.innerHeight;
 
-    // 4. 가로 중앙 위치 계산 - 여기에서는 JavaScript로 설정하지 않음
-    // CSS의 left: 50%, transform: translateX(-50%)로 처리
+    // // 4. 가로 중앙 위치 계산 - 여기에서는 JavaScript로 설정하지 않음
+    // // CSS의 left: 50%, transform: translateX(-50%)로 처리
 
-    // 5. 세로 위치 조정 (화면 아래쪽 경계 체크)
-    var topPosition = pos.top + targetEl.offsetHeight;
-    if (topPosition + popupHeight > windowHeight) {
-        topPosition = pos.top - popupHeight; // 팝업을 위로 표시
-    }
-
+    // // 5. 세로 위치 조정 (화면 아래쪽 경계 체크)
+    // var topPosition = pos.top + targetEl.offsetHeight;
+    // if (topPosition + popupHeight > windowHeight) {
+    //     topPosition = pos.top - popupHeight; // 팝업을 위로 표시
+    // }
+    var rect = targetEl.getBoundingClientRect();
+    var topPosition = rect.top + window.scrollY;  // iOS에서도 정확한 위치 반환
     // 6. 최종 위치 설정
     popupEl.style.top = topPosition + "px";
     // left는 CSS에서 처리하므로 여기서 설정하지 않음
