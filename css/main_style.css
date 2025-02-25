@@ -615,7 +615,7 @@ button {
 }
 @media (max-width: 749px) {
     .ognztn ol::before {
-        height: 25%;
+        height: 24.8%;
     }
     .ognztn .row ul {
         margin-top: 20px;
