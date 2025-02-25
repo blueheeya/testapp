@@ -648,3 +648,11 @@ button {
         left: -10px;
     }
 }
+/*버튼*/
+.btnType1 {
+    padding: 10px 20px;
+    background: #26447D;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 1rem;
+}
