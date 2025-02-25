@@ -441,8 +441,8 @@ button {
     left: 50%;
     top:20%;
     width: 1px;
-    height: calc(50% + 100px);
-    background: #222;
+    height: calc(50% + 42px);
+    background: #89A1DC;
     z-index: 0;
 }
 .ognztn .lv1 {
@@ -499,11 +499,11 @@ button {
     display: block;
     position: absolute;
     left: 50%;
-    top:-50%;
+    top:-80%;
     width: calc(100% + 8px);
     height: 1px;
     transform: translateX(-50%);
-    background: #222;
+    background: #89A1DC;
     z-index: 0;
 }
 .ognztn .row ul li:first-child:before {
@@ -536,10 +536,10 @@ button {
     display: block;
     position: absolute;
     left: 50%;
-    top:-58%;
+    top:-90%;
     width: 1px;
-    height: 58%;
-    background: #222;
+    height: calc(88% - 1px);
+    background: #89A1DC;
     z-index: 0;
 }
 .ico-right-bl {
@@ -552,26 +552,30 @@ button {
 }
 @media (max-width: 1280px) {
     .ognztn ol::before {
-        height: 39.4%;
+        height: 37.8%;
     }
     .ognztn .row ul {
         flex-wrap: wrap !important;
         gap: 8px 0;
+        margin-top: 20px;
     }
     .ognztn .row ul li {
         width: calc(50% - 8px);
+    }
+    .ognztn .row ul li::before {
+        top:-50%;
     }
     .ognztn .row ul li:nth-child(1):before{
         width: calc(100% + 17px);
         left: 50%;
     }
-    .ognztn .row ul li:nth-child(2):before{
+    .ognztn .row ul li:nth-child(5):before{
         width: calc(100% + 17px);
         left: 50%;
     }
+    .ognztn .row ul li:nth-child(2):before,
     .ognztn .row ul li:nth-child(3):before,
     .ognztn .row ul li:nth-child(4):before,
-    .ognztn .row ul li:nth-child(5):before,
     .ognztn .row ul li:nth-child(6):before,
     .ognztn .row ul li:nth-child(7):before,
     .ognztn .row ul li:nth-child(8):before{
@@ -583,14 +587,14 @@ button {
         height: calc(100% + 50px);
         transform: translateY(-50%);
     }
-    .ognztn .row ul li:nth-child(2) button:before,
-    .ognztn .row ul li:nth-child(4) button:before,
+    .ognztn .row ul li:nth-child(5) button:before,
     .ognztn .row ul li:nth-child(6) button:before,
+    .ognztn .row ul li:nth-child(7) button:before,
     .ognztn .row ul li:nth-child(8) button:before {
         left: calc(100% + 10px);
     }
     .ognztn .row ul li:nth-child(1) button:before,
-    .ognztn .row ul li:nth-child(2) button:before {
+    .ognztn .row ul li:nth-child(5) button:before {
         top: 0%;
         height: calc(100% + 8px);
     }
@@ -603,17 +607,43 @@ button {
         width: 10px;
         height: 1px;
         transform: translateY(-50%);
-        background: #222;
+        background: #89A1DC;
         z-index: 0; 
     }
-    .ognztn .row ul li:nth-child(2) button:after,
-    .ognztn .row ul li:nth-child(4) button:after,
+    .ognztn .row ul li:nth-child(5) button:after,
     .ognztn .row ul li:nth-child(6) button:after,
+    .ognztn .row ul li:nth-child(7) button:after,
     .ognztn .row ul li:nth-child(8) button:after {
         left: 100%;
     }
+    .ognztn .row ul li:nth-child(1) {
+        order: -1;
+    }
+    .ognztn .row ul li:nth-child(2) {
+        order: 1;
+    }
+    .ognztn .row ul li:nth-child(3) {
+        order: 3;
+    }
+    .ognztn .row ul li:nth-child(4) {
+        order: 5;
+    }
+    .ognztn .row ul li:nth-child(5) {
+        order: 0;
+    }
+    .ognztn .row ul li:nth-child(6) {
+        order: 2;
+    }
+    .ognztn .row ul li:nth-child(7) {
+        order: 4;
+    }
+    .ognztn .row ul li:nth-child(8) {
+        order: 6;
+    }
 }
-@media (max-width: 749px) {
+@media (max-width: 746px) {
+}
+@media (max-width: 375px) {
     .ognztn ol::before {
         height: 24.8%;
     }
@@ -628,24 +658,28 @@ button {
         left: -8px;
         transform: translateX(0);
     }
-    .ognztn .row ul li:nth-child(2):before {
+    .ognztn .row ul li:nth-child(5):before {
         display: none;
     }
-    .ognztn .row ul li:nth-child(2) button:before {
+    .ognztn .row ul li:nth-child(5) button:before {
         top: 0%;
-        height: calc(100% + 16px);
+        height: calc(100% + 36px);
     }
-    .ognztn .row ul li:nth-child(2) button:before,
-    .ognztn .row ul li:nth-child(4) button:before,
+    .ognztn .row ul li:nth-child(3) button:before,
+    .ognztn .row ul li:nth-child(5) button:before,
     .ognztn .row ul li:nth-child(6) button:before,
+    .ognztn .row ul li:nth-child(7) button:before,
     .ognztn .row ul li:nth-child(8) button:before {
         left: -10px;
     }
-    .ognztn .row ul li:nth-child(2) button:after,
-    .ognztn .row ul li:nth-child(4) button:after,
+    .ognztn .row ul li:nth-child(5) button:after,
     .ognztn .row ul li:nth-child(6) button:after,
+    .ognztn .row ul li:nth-child(7) button:after,
     .ognztn .row ul li:nth-child(8) button:after {
         left: -10px;
+    }
+    .ognztn .row ul li {
+        order: 1 !important;
     }
 }
 /*버튼*/
