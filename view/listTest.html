@@ -1,0 +1,1852 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/default.css" />
+    <link rel="stylesheet" href="../css/sub.css" />
+</head>
+<body>
+    <div class="container" id="content">
+		<main id="main-container">
+			
+
+			<!-- 콘텐츠 -->
+			<div class="content">
+				<h1 class="pag-title sr-only">법규정보</h1>
+<div class="info-txt2">
+	<p class="tit">
+		현행 법규를 분류별 구조로 나타내며, 선택한 법규에 대해서<br class="pc"> <em>조문보기, 관련 하위보기, 전문보기</em> 등의 기능을 제공합니다.
+	</p>
+	<div class="schType" id="tab">
+		<form name="schFrom" id="schFrom" method="get" action="/portal/singl/law/listSearch.do">
+			<input type="hidden" name="menuNo" id="menuNo" value="200200">
+			<input type="hidden" name="parentlawseq" id="parentlawseq" value="100121">
+			<input type="hidden" name="detaillawseq" id="detaillawseq" value="">
+			<input type="hidden" name="lawseq" id="lawseq" value="100447">
+			<div class="pa1">
+				<p>
+					<label for="lawseqSearch">분류</label>
+					<span>
+						<select name="lawseqSearch" id="lawseqSearch" class="inpStyle">
+							<option value="">전체</option>
+							
+								<option value="100142">금융기본법령</option>
+							
+								<option value="100143">경영</option>
+							
+								<option value="100089">관리</option>
+							
+								<option value="100144">통화정책</option>
+							
+								<option value="100120">금융안정· 지급결제</option>
+							
+								<option value="100121">외환·국제</option>
+							
+								<option value="100192">현업</option>
+							
+								<option value="100193">통계</option>
+							
+								<option value="100194">감사</option>
+							
+						</select>
+					</span>
+				</p>
+				<p>
+					<label for="typeCode">검색영역</label>
+					<span>
+						<select name="typeCode" id="typeCode" class="inpStyle">
+							<option value="01">법규명</option>
+							<option value="02">법규내용</option>
+						</select>
+					</span>
+				</p>
+			</div>
+			<div class="pa2">
+				<p>
+					<label for="search_text">검색어</label>
+					<span class="keyword-set">
+						<span class="inpStyle">
+							<input type="text" name="search_text" id="search_text" value="" class="inpStyle_t">
+						</span>
+						<a href="javascript:document.schFrom.submit();" class="search"><span class="hidden">검색</span></a>
+					</span>
+				</p>
+			</div>
+		</form>
+	</div>
+</div>
+
+
+	<div class="lawTab mb30">
+		<ul class="lawTab_d1">
+			
+				<li>
+					<a href="/portal/singl/law/listSearch.do?menuNo=200200&amp;parentlawseq=100142">금융기본법령</a>
+				</li>
+			
+				<li>
+					<a href="/portal/singl/law/listSearch.do?menuNo=200200&amp;parentlawseq=100143">경영</a>
+				</li>
+			
+				<li>
+					<a href="/portal/singl/law/listSearch.do?menuNo=200200&amp;parentlawseq=100089">관리</a>
+				</li>
+			
+				<li>
+					<a href="/portal/singl/law/listSearch.do?menuNo=200200&amp;parentlawseq=100144">통화정책</a>
+				</li>
+			
+				<li>
+					<a href="/portal/singl/law/listSearch.do?menuNo=200200&amp;parentlawseq=100120">금융안정· 지급결제</a>
+				</li>
+			
+				<li class="active">
+					<a href="/portal/singl/law/listSearch.do?menuNo=200200&amp;parentlawseq=100121" title="선택됨">외환·국제</a>
+				</li>
+			
+				<li>
+					<a href="/portal/singl/law/listSearch.do?menuNo=200200&amp;parentlawseq=100192">현업</a>
+				</li>
+			
+				<li>
+					<a href="/portal/singl/law/listSearch.do?menuNo=200200&amp;parentlawseq=100193">통계</a>
+				</li>
+			
+				<li>
+					<a href="/portal/singl/law/listSearch.do?menuNo=200200&amp;parentlawseq=100194">감사</a>
+				</li>
+			
+		</ul>
+		
+			<div class="lawTab_d2">
+				<div>
+					<ul>
+						
+							<li>
+								<a href="/portal/singl/law/listSearch.do?menuNo=200200&amp;parentlawseq=100121&amp;detaillawseq=100122">외국환</a>
+							</li>
+						
+							<li>
+								<a href="/portal/singl/law/listSearch.do?menuNo=200200&amp;parentlawseq=100121&amp;detaillawseq=100130">외화자산 운용</a>
+							</li>
+						
+							<li>
+								<a href="/portal/singl/law/listSearch.do?menuNo=200200&amp;parentlawseq=100121&amp;detaillawseq=100208">외화예금지급준비</a>
+							</li>
+						
+							<li>
+								<a href="/portal/singl/law/listSearch.do?menuNo=200200&amp;parentlawseq=100121&amp;detaillawseq=100209">외국환평형기금</a>
+							</li>
+						
+							<li>
+								<a href="/portal/singl/law/listSearch.do?menuNo=200200&amp;parentlawseq=100121&amp;detaillawseq=100210">외환정보집중기관</a>
+							</li>
+						
+							<li>
+								<a href="/portal/singl/law/listSearch.do?menuNo=200200&amp;parentlawseq=100121&amp;detaillawseq=100211">국제금융기구</a>
+							</li>
+						
+						<li>
+							
+						</li>
+					</ul>
+				</div>
+			</div>
+		
+	</div>
+<div class="bdView">
+	<h3 class="subject tac">외국환거래업무 취급절차</h3>
+	<div class="scrollBox" tabindex="0">
+		<div class="table tac">
+			<table class="table-striped table-hover">
+				<caption>외국환거래업무 취급절차</caption>
+				<thead>
+					<tr>
+						<th scope="col">개정일</th>
+						<th scope="col">구분</th>
+						<th scope="col">번호</th>
+						<th scope="col" class="file type1">전문</th>
+						<th scope="col" class="file type1">요지</th>
+						<th scope="col" class="file type1">신구</th>
+					</tr>
+				</thead>
+				<tbody>
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=106592">2024-06-10</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=106592&amp;fileNm=외국환거래업무 취급절차_20240610.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                        </td>
+                        <td>
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=106592&amp;fileNm=외국환거래업무 취급절차_20240610_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                        </td>
+                        <td>
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=106592&amp;fileNm=외국환거래업무 취급절차_20240610_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=106509">2024-01-03</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=106509&amp;fileNm=외국환거래업무 취급절차_20240103_국제국_20240103.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                        </td>
+                        <td>
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=106509&amp;fileNm=외국환거래업무 취급절차_20240103_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                        </td>
+                        <td>
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=106509&amp;fileNm=외국환거래업무 취급절차_20240103_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104449">2023-07-26</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104449&amp;fileNm=외국환거래업무 취급절차_20230726.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                        </td>
+                        <td>
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104449&amp;fileNm=외국환거래업무 취급절차_20230726_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                        </td>
+                        <td>
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104449&amp;fileNm=외국환거래업무 취급절차_20230726_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104448">2022-04-19</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104448&amp;fileNm=외국환거래업무 취급절차_20220419.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104448&amp;fileNm=외국환거래업무 취급절차_20220419_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104448&amp;fileNm=외국환거래업무 취급절차_20220419_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104447">2021-12-28</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104447&amp;fileNm=외국환거래업무 취급절차_20211228.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104447&amp;fileNm=외국환거래업무 취급절차_20211228_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104447&amp;fileNm=외국환거래업무 취급절차_20211228_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>	
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104446">2019-10-22</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104446&amp;fileNm=외국환거래업무 취급절차_20191022.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104446&amp;fileNm=외국환거래업무 취급절차_20191022_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104446&amp;fileNm=외국환거래업무 취급절차_20191022_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104445">2018-12-31</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104445&amp;fileNm=외국환거래업무 취급절차_20181231.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104445&amp;fileNm=외국환거래업무 취급절차_20181231_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104445&amp;fileNm=외국환거래업무 취급절차_20181231_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104444">2016-03-31</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104444&amp;fileNm=외국환거래업무 취급절차_20160331.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104444&amp;fileNm=외국환거래업무 취급절차_20160331_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104444&amp;fileNm=외국환거래업무 취급절차_20160331_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104443">2016-01-19</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104443&amp;fileNm=외국환거래업무 취급절차_20160119.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104443&amp;fileNm=외국환거래업무 취급절차_20160119_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104443&amp;fileNm=외국환거래업무 취급절차_20160119_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104442">2015-12-31</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104442&amp;fileNm=외국환거래업무 취급절차_20151231.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104442&amp;fileNm=외국환거래업무 취급절차_20151231_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104442&amp;fileNm=외국환거래업무 취급절차_20151231_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104441">2015-06-30</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104441&amp;fileNm=외국환거래업무 취급절차_20150630.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104441&amp;fileNm=외국환거래업무 취급절차_20150630_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104441&amp;fileNm=외국환거래업무 취급절차_20150630_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104440">2015-01-07</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104440&amp;fileNm=외국환거래업무 취급절차_20150107.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104440&amp;fileNm=외국환거래업무 취급절차_20150107_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104440&amp;fileNm=외국환거래업무 취급절차_20150107_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104439">2014-12-23</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104439&amp;fileNm=외국환거래업무 취급절차_20141223.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104439&amp;fileNm=외국환거래업무 취급절차_20141223_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104439&amp;fileNm=외국환거래업무 취급절차_20141223_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104438">2014-01-20</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104438&amp;fileNm=외국환거래업무 취급절차_20140120.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104438&amp;fileNm=외국환거래업무 취급절차_20140120_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104438&amp;fileNm=외국환거래업무 취급절차_20140120_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104437">2013-09-11</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104437&amp;fileNm=외국환거래업무 취급절차_20130911.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104437&amp;fileNm=외국환거래업무 취급절차_20130911_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104437&amp;fileNm=외국환거래업무 취급절차_20130911_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104436">2013-06-28</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104436&amp;fileNm=외국환거래업무 취급절차_20130628.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104436&amp;fileNm=외국환거래업무 취급절차_20130628_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104436&amp;fileNm=외국환거래업무 취급절차_20130628_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104435">2012-11-28</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104435&amp;fileNm=외국환거래업무 취급절차_20121128.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104435&amp;fileNm=외국환거래업무 취급절차_20121128_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104435&amp;fileNm=외국환거래업무 취급절차_20121128_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104434">2012-10-18</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104434&amp;fileNm=외국환거래업무 취급절차_20121018.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104434&amp;fileNm=외국환거래업무 취급절차_20121018_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104434&amp;fileNm=외국환거래업무 취급절차_20121018_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104433">2012-04-27</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104433&amp;fileNm=외국환거래업무 취급절차_20120427.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104433&amp;fileNm=외국환거래업무 취급절차_20120427_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104433&amp;fileNm=외국환거래업무 취급절차_20120427_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104432">2011-09-06</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104432&amp;fileNm=외국환거래업무 취급절차_20110906.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104432&amp;fileNm=외국환거래업무 취급절차_20110906_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104432&amp;fileNm=외국환거래업무 취급절차_20110906_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104431">2011-07-15</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104431&amp;fileNm=외국환거래업무 취급절차_20110715.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104431&amp;fileNm=외국환거래업무 취급절차_20110715_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104431&amp;fileNm=외국환거래업무 취급절차_20110715_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104430">2011-06-01</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104430&amp;fileNm=외국환거래업무 취급절차_20110601.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104430&amp;fileNm=외국환거래업무 취급절차_20110601_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104430&amp;fileNm=외국환거래업무 취급절차_20110601_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104429">2011-04-05</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104429&amp;fileNm=외국환거래업무 취급절차_20110405.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104429&amp;fileNm=외국환거래업무 취급절차_20110405_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104429&amp;fileNm=외국환거래업무 취급절차_20110405_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104428">2010-12-13</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104428&amp;fileNm=외국환거래업무 취급절차_20101213.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104428&amp;fileNm=외국환거래업무 취급절차_20101213_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104428&amp;fileNm=외국환거래업무 취급절차_20101213_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104427">2010-08-03</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104427&amp;fileNm=외국환거래업무 취급절차_20100803.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104427&amp;fileNm=외국환거래업무 취급절차_20100803_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104427&amp;fileNm=외국환거래업무 취급절차_20100803_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104426">2009-11-20</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104426&amp;fileNm=외국환거래업무 취급절차_20091120.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104426&amp;fileNm=외국환거래업무 취급절차_20091120_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104426&amp;fileNm=외국환거래업무 취급절차_20091120_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104425">2009-09-18</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104425&amp;fileNm=외국환거래업무 취급절차_20090918.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104425&amp;fileNm=외국환거래업무 취급절차_20090918_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104425&amp;fileNm=외국환거래업무 취급절차_20090918_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104424">2009-03-18</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104424&amp;fileNm=외국환거래업무 취급절차_20090318.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104424&amp;fileNm=외국환거래업무 취급절차_20090318_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104424&amp;fileNm=외국환거래업무 취급절차_20090318_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104423">2008-09-10</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104423&amp;fileNm=외국환거래업무 취급절차_20080910.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104423&amp;fileNm=외국환거래업무 취급절차_20080910_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104423&amp;fileNm=외국환거래업무 취급절차_20080910_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104422">2008-03-20</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104422&amp;fileNm=외국환거래업무 취급절차_20080320.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104422&amp;fileNm=외국환거래업무 취급절차_20080320_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104422&amp;fileNm=외국환거래업무 취급절차_20080320_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104421">2008-01-17</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104421&amp;fileNm=외국환거래업무 취급절차_20080117.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104421&amp;fileNm=외국환거래업무 취급절차_20080117_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104421&amp;fileNm=외국환거래업무 취급절차_20080117_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104420">2007-12-28</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104420&amp;fileNm=외국환거래업무 취급절차_20071228.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104420&amp;fileNm=외국환거래업무 취급절차_20071228_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104420&amp;fileNm=외국환거래업무 취급절차_20071228_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104410">2003-03-28</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104410&amp;fileNm=외국환거래업무 취급절차_20030328.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104410&amp;fileNm=외국환거래업무 취급절차_20030328_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104410&amp;fileNm=외국환거래업무 취급절차_20030328_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104409">2002-07-02</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104409&amp;fileNm=외국환거래업무 취급절차_20020702.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104409&amp;fileNm=외국환거래업무 취급절차_20020702_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104409&amp;fileNm=외국환거래업무 취급절차_20020702_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104406">2002-02-15</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104406&amp;fileNm=외국환거래업무 취급절차_20020215.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104406&amp;fileNm=외국환거래업무 취급절차_20020215_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104406&amp;fileNm=외국환거래업무 취급절차_20020215_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104405">2001-07-02</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104405&amp;fileNm=외국환거래업무 취급절차_20010702.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104405&amp;fileNm=외국환거래업무 취급절차_20010702_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104405&amp;fileNm=외국환거래업무 취급절차_20010702_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104404">2001-01-05</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104404&amp;fileNm=외국환거래업무 취급절차_20010105.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104404&amp;fileNm=외국환거래업무 취급절차_20010105_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104404&amp;fileNm=외국환거래업무 취급절차_20010105_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104403">2000-07-06</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104403&amp;fileNm=외국환거래업무 취급절차_20000706.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104403&amp;fileNm=외국환거래업무 취급절차_20000706_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104403&amp;fileNm=외국환거래업무 취급절차_20000706_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                
+                    
+                    <tr>
+                        <td>
+                            <a href="/portal/singl/law/view.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=&amp;lawseq=100447&amp;hseq=104402">1999-10-30</a>
+                        </td>
+                        <td>외국환거래업무 취급절차</td>
+                        <td></td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=01&amp;seq=104402&amp;fileNm=외국환거래업무 취급절차_19991030.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=03&amp;seq=104402&amp;fileNm=외국환거래업무 취급절차_19991030_개정문.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104402&amp;fileNm=외국환거래업무 취급절차_19991030_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+                        <td>
+                            
+                                <a href="/portal/law/fileDown.do?gb_code=05&amp;seq=104402&amp;fileNm=외국환거래업무 취급절차_19991030_신구대비표.hwp"><span class="icon icon-hwp"><span class="hidden">첨부파일 있습니다</span></span></a>
+                            
+                        </td>
+                    </tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<div>
+	<div class="row">
+		<div class="col l6 m12">
+			<div class="scrollBox" tabindex="0">
+				<h4>외국환거래업무 취급절차20250123</h4>
+				<ul class="lawList">
+							<li>
+								
+								-- 제 1 장   총칙
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 1 조 (목적)', '631324')">제 1 조 (목적)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+								-- 제 2 장   외국환은행 등
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 2 조 (외화자산 및 부채의 범위)', '631326')">제 2 조 (외화자산 및 부채의 범위)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 3 조 (외국환포지션한도의 산정)', '631327')">제 3 조 (외국환포지션한도의 산정)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 4 조 (별도한도의 인정신청)', '631328')">제 4 조 (별도한도의 인정신청)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 4 조의2 (대내외화사모사채)', '631329')">제 4 조의2 (대내외화사모사채)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 4 조의3 (대출 및 외화채무증권 투자에 대한 심사와 사후관리)', '631330')">제 4 조의3 (대출 및 외화채무증권 투자에 대한 심사와 사후관리)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 4 조의4 (원화·위안화 시장 시장조성자 자격 요건)', '631331')">제 4 조의4 (원화·위안화 시장 시장조성자 자격 요건)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 4 조의5 (원화·위안화 시장 시장조성자 선정 절차)', '631332')">제 4 조의5 (원화·위안화 시장 시장조성자 선정 절차)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 4 조의6 (원화·위안화 시장 시장조성자 호가제시 의무)', '631333')">제 4 조의6 (원화·위안화 시장 시장조성자 호가제시 의무)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 4 조의7 (원화·미화 시장 선도은행 자격 요건)', '631334')">제 4 조의7 (원화·미화 시장 선도은행 자격 요건)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 4 조의8 (원화·미화 시장 선도은행 거래실적 평가기준)', '631335')">제 4 조의8 (원화·미화 시장 선도은행 거래실적 평가기준)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 4 조의9 (선정 취소 등 절차)', '631336')">제 4 조의9 (선정 취소 등 절차)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+								-- 제 3 장   해외외국환업무취급기관
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 5 조 (제재 등 조치기준)', '631338')">제 5 조 (제재 등 조치기준)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 5 조의2 (제재심의위원회)', '631339')">제 5 조의2 (제재심의위원회)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 6 조 (해외외국환업무취급기관에 대한 검사절차)', '631340')">제 6 조 (해외외국환업무취급기관에 대한 검사절차)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 6 조의2 (해외외국환업무취급기관에 대한 검사사항)', '631341')">제 6 조의2 (해외외국환업무취급기관에 대한 검사사항)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 6 조의3 (대행기관 등 관계인에 대한 검사절차)', '631342')">제 6 조의3 (대행기관 등 관계인에 대한 검사절차)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 6 조의4 (대행기관 등 관계인에 대한 검사사항)', '631343')">제 6 조의4 (대행기관 등 관계인에 대한 검사사항)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 7 조', '631344')">제 7 조</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 8 조', '631345')">제 8 조</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+								-- 제 4 장   외국환중개회사
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 9 조 (제재 등 조치기준)', '631347')">제 9 조 (제재 등 조치기준)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 10 조 (검사절차)', '631348')">제 10 조 (검사절차)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 11 조 (검사사항)', '631349')">제 11 조 (검사사항)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 12 조', '631350')">제 12 조</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 12 조의2', '631351')">제 12 조의2</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 12 조의3', '631352')">제 12 조의3</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 12 조의4', '631353')">제 12 조의4</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+								-- 제 5 장   외국환거래 신고등
+							</li>
+						
+					
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 13 조 (신고등의 신청)', '631356')">제 13 조 (신고등의 신청)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 14 조 (신청서의 접수)', '631357')">제 14 조 (신청서의 접수)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 15 조 (신청서의 보완)', '631358')">제 15 조 (신청서의 보완)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 16 조 (처리기준)', '631360')">제 16 조 (처리기준)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 17 조 (전결구분의 공통사항)', '631361')">제 17 조 (전결구분의 공통사항)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 18 조 (허가서등의 교부)', '631362')">제 18 조 (허가서등의 교부)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 19 조 (유효기간)', '631363')">제 19 조 (유효기간)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 20 조 (관리 등)', '631364')">제 20 조 (관리 등)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 21 조 (사후관리 주체 및 대상)', '631366')">제 21 조 (사후관리 주체 및 대상)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 22 조 (자료제출 요구 등)', '631367')">제 22 조 (자료제출 요구 등)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 23 조 (위규사항 통보 등)', '631368')">제 23 조 (위규사항 통보 등)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+								-- 제 6 장   외국환거래 검사
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 24 조 (검사절차)', '631370')">제 24 조 (검사절차)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 25 조 (검사사항)', '631371')">제 25 조 (검사사항)</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 26 조', '631372')">제 26 조</a>
+									
+									
+								
+								
+							</li>
+						
+					
+						
+							<li>
+								
+								-- 제 7 장   외국환거래 보고 대상자
+							</li>
+						
+					
+						
+							<li>
+								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 27 조 (검사절차)', '631374')">제 27 조 (검사절차)</a>
+									
+									
+								
+								
+							</li>
+
+							<li>								
+									<a href="javascript:void(0);" onclick="amendinfoBtn('제 35 조', '631383')">제 35 조</a>
+							</li>
+						<li>
+							<a href="/portal/law/fileDown.do?gb_code=10&amp;seq=61590&amp;fileNm=(별표 1) 금융기관 외화대차대조표 작성요령.hwp">(별표 1) 금융기관 외화대차대조표 작성요령.hwp</a>
+						</li>
+					
+						<li>
+							<a href="/portal/law/fileDown.do?gb_code=10&amp;seq=61591&amp;fileNm=(별표 2) 신고등 업무 처리기준.hwp">(별표 2) 신고등 업무 처리기준.hwp</a>
+						</li>
+					
+						<li>
+							<a href="/portal/law/fileDown.do?gb_code=10&amp;seq=61592&amp;fileNm=(별표 2-1) 금융제재대상자와의 지급등에 대한 허가 심사기준.hwp">(별표 2-1) 금융제재대상자와의 지급등에 대한 허가 심사기준.hwp</a>
+						</li>
+					
+						<li>
+							<a href="/portal/law/fileDown.do?gb_code=10&amp;seq=61593&amp;fileNm=(별표 3) 원화·미화 시장 선도은행 거래실적 평가기준.hwp">(별표 3) 원화·미화 시장 선도은행 거래실적 평가기준.hwp</a>
+						</li>
+					
+						<li>
+							<a href="/portal/law/fileDown.do?gb_code=10&amp;seq=61594&amp;fileNm=(별지 제1호 서식) 신고등의 신청시 제출서류.hwp">(별지 제1호 서식) 신고등의 신청시 제출서류.hwp</a>
+						</li>
+					
+						<li>
+							<a href="/portal/law/fileDown.do?gb_code=10&amp;seq=61595&amp;fileNm=(별지 제2호 서식) 보고서.hwp">(별지 제2호 서식) 보고서.hwp</a>
+						</li>
+					
+						<li>
+							<a href="/portal/law/fileDown.do?gb_code=10&amp;seq=61596&amp;fileNm=(별지 제3호 서식) 서식등.hwp">(별지 제3호 서식) 서식등.hwp</a>
+						</li>
+					
+						<li>
+							<a href="/portal/law/fileDown.do?gb_code=10&amp;seq=61597&amp;fileNm=(별지 제4호 서식) 원화·위안화 시장 시장조성자 선정 신청서.hwp">(별지 제4호 서식) 원화·위안화 시장 시장조성자 선정 신청서.hwp</a>
+						</li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+    <div class="row" id="amendinfoView"><div class="col l6 m12" id="amendinfo"><div class="scrollBox" tabindex="0"><h4>제 1 조 (목적)</h4><div class="hgroup"><p class="fr mt0"><a href="javascript:void(0);" onclick="printBtn('amendinfo');" title="인쇄하기 (자바스크립트 미지원시 브라우저 인쇄기능을 이용하세요)"><span class="ti-printer"><span class="hidden">프린트</span></span></a></p></div><div> <div class="none level0"><span style="0">이 절차는 「외국환거래업무 취급세칙」 시행에 필요한 사항을 정함을 목적으로 한다.</span></div></div></div></div><script>function printBtn(relm) {var printContents = document.getElementById(relm).innerHTML;var originalContents = document.body.innerHTML;document.body.innerHTML = printContents;window.print();document.body.innerHTML = originalContents;}</script></div>
+</div>
+
+<div class="clear btnSet">
+	<a href="/portal/singl/law/listSearch.do?menuNo=200200&amp;lawseqSearch=&amp;typeCode=&amp;search_text=&amp;parentlawseq=100121&amp;detaillawseq=#tabDiv" class="b-list">목록</a>
+</div>
+
+<script>
+	$(function() {
+
+		amendinfoBtn = function(ctitle, cseq) {
+			$.post("/portal/singl/law/amendinfoView.json", {
+				ctitle : ctitle,
+				cseq : cseq,
+				lawseq : '100447',
+				hseq : '106709'
+			}, function(data) {
+				amendinfoHtml(data.amendinfoList.lawInfo);
+			}, "json");
+		}
+
+		amendinfoHtml = function(list) {
+			var html = '';
+			html += '<div class="col l6 m12" id="amendinfo">'
+					+ '<div class="scrollBox" tabindex="0">'
+					+ '<h4>'
+					+ list.contents[0].ctitle
+					+ '</h4>'
+					+ '<div class="hgroup">'
+					+ '<p class="fr mt0">'
+					+ '<a href="javascript:void(0);" onclick="printBtn(\'amendinfo\');" title="인쇄하기 (자바스크립트 미지원시 브라우저 인쇄기능을 이용하세요)"><span class="ti-printer"><span class="hidden">프린트</span></span></a>'
+					+ '</p>' + '</div>' + '<div>' + list.contents[0].ccontents
+					+ '</div>' + '</div>' + '</div>';
+
+			html += '<script>'
+					+ 'function printBtn(relm) {'
+					+ 'var printContents = document.getElementById(relm).innerHTML;'
+					+ 'var originalContents = document.body.innerHTML;'
+					+ 'document.body.innerHTML = printContents;'
+					+ 'window.print();'
+					+ 'document.body.innerHTML = originalContents;' + '}'
+					+ '<\/script>';
+
+			$('#amendinfoView').html(html);
+		}
+
+		$('.lawList').find('a:first').click();
+	});
+</script>
+
+								
+							
+						
+					
+				
+				
+			</div>
+			
+			<!-- 만족도 조사, 자료관리 담당자 -->
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<div class="admin-set">
+						<div class="satisfact">
+							<p class="title">유용한 정보가 되었나요?</p>
+							<form name="stsfdgForm" id="stsfdgForm" method="post" action="">
+								<input type="hidden" name="menuNo" value="200200">
+								<div class="radio-group">
+									<label for="sati1">
+										<input type="radio" name="stsfdgIdex" id="sati1" value="5">
+										<i></i>
+										<span>매우만족</span>
+									</label>
+									<label for="sati2">
+										<input type="radio" name="stsfdgIdex" id="sati2" value="4">
+										<i></i>
+										<span>만족</span>
+									</label>
+									<label for="sati3">
+										<input type="radio" name="stsfdgIdex" id="sati3" value="3">
+										<i></i>
+										<span>보통</span>
+									</label>
+									<label for="sati4">
+										<input type="radio" name="stsfdgIdex" id="sati4" value="2">
+										<i></i>
+										<span>불만족</span>
+									</label>
+									<label for="sati5">
+										<input type="radio" name="stsfdgIdex" id="sati5" value="1">
+										<i></i>
+										<span>매우불만족</span>
+									</label>
+								</div>
+								<button type="submit">확인</button>
+							</form>
+							<script type="text/javascript">
+								$("#stsfdgForm").submit(function() {
+									if ($(this).find("input[name=stsfdgIdex]:checked").length == 0) {
+										$(this).find("input[name=stsfdgIdex]").eq(0).focus();
+										alert("페이지만족도를 선택해 주세요.");
+										return false;
+									}
+
+									var url = "/portal/singl/stsfdg/insert.json";
+									var params = $(this).serialize();
+									$.post(url,params,function(data) {
+										if (data.resultCode == "success") {
+											alert("페이지만족도 의견이 등록되었습니다.");
+											$("#stsfdgForm")[0].reset();
+										}
+										else if (data.resultCode == "duplicate") {
+											alert("이미 등록하셨습니다.");
+										}
+										else {
+											alert("페이지만족도 의견등록 오류입니다.");
+										}
+									},"json");
+
+									return false;
+								});
+							</script>
+						</div>
+						
+							<div class="info">
+								
+								<dl>
+									<dt>담당부서</dt>
+									<dd>
+										
+											
+											
+											
+											법규제도실 일반법규팀
+										
+									</dd>
+									<dt class="sr-only">전화번호</dt>
+									<dd>02-759-4043</dd>
+								</dl>
+							</div>
+						
+					</div>
+
+			<!-- 만족도 조사, 자료관리 담당자 -->
+
+			<!-- 내가 본 콘텐츠	-->
+			<div class="my_memo">
+				<button type="button" class="btn" title="내가 본 콘텐츠 열기">
+					<span class="sr-only">내가 본 콘텐츠</span>
+				</button>
+				<div class="swiper">
+					<div class="top">
+						<h2>내가 본 콘텐츠</h2>
+						<button type="button" class="close" title="내가 본 콘텐츠 닫기"></button>
+					</div>
+					<div class="swiper_body swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-grid swiper-grid-column">
+						<div id="myView" class="swiper-wrapper" aria-live="off" style="transition-duration: 0ms;"><a href="/portal/bbs/B0000347/view.do?menuNo=201106&amp;nttId=10089765" class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 6" style="width: 166px;" title="경력직만 뽑으면 경력은 언제 쌓죠?"><span class="i">블로그</span><span class="txt">경력직만 뽑으면 경력은 언제 쌓죠?</span></a><a href="/portal/bbs/B0000169/view.do?menuNo=201295&amp;nttId=10088294" class="swiper-slide swiper-slide-active" role="group" aria-label="2 / 6" style="width: 166px;" title="통화정책방향 관련 총재 기자간담회(2024.11)"><span class="i">총재기자간담회</span><span class="txt">통화정책방향 관련 총재 기자간담회(2024.11)</span></a><a href="/portal/bbs/B0000501/view.do?menuNo=201264&amp;nttId=10089757" class="swiper-slide swiper-slide-active" role="group" aria-label="3 / 6" style="width: 166px;" title="2024년 12월 통화 및 유동성"><span class="i">통계 보도자료</span><span class="txt">2024년 12월 통화 및 유동성</span></a><a href="/portal/bbs/B0000501/view.do?menuNo=201264&amp;nttId=10089863" class="swiper-slide swiper-slide-active" role="group" aria-label="4 / 6" style="width: 166px;" title="2025년 1월 생산자물가지수(잠정)   "><span class="i">통계 보도자료</span><span class="txt">2025년 1월 생산자물가지수(잠정)   </span></a><a href="/portal/bbs/B0000502/view.do?menuNo=201265&amp;nttId=10089438" class="swiper-slide swiper-slide-active" role="group" aria-label="5 / 6" style="width: 166px;" title="[보도참고자료] 2025년 2월중 통화안정증권 발행 계획"><span class="i">기타 보도자료</span><span class="txt">[보도참고자료] 2025년 2월중 통화안정증권 발행 계획</span></a><a href="/portal/bbs/B0000502/view.do?menuNo=201265&amp;nttId=10089631" class="swiper-slide swiper-slide-active" role="group" aria-label="6 / 6" style="width: 166px;" title="2025년 1월말 외환보유액"><span class="i">기타 보도자료</span><span class="txt">2025년 1월말 외환보유액</span></a><a href="/portal/bbs/B0000502/view.do?menuNo=201265&amp;nttId=10089646" class="swiper-slide swiper-slide-active" role="group" aria-label="7 / 6" style="width: 166px;" title="[보도참고자료] 2025년 1월 「물가상황점검회의」 개최"><span class="i">기타 보도자료</span><span class="txt">[보도참고자료] 2025년 1월 「물가상황점검회의」 개최</span></a><a href="/portal/bbs/P0000561/view.do?menuNo=200037&amp;nttId=10089685" class="swiper-slide swiper-slide-active" role="group" aria-label="8 / 6" style="width: 166px;" title="한국은행 UI/UX 솔루션 도입 사업 제안요청서 사전공개"><span class="i">공지사항</span><span class="txt">한국은행 UI/UX 솔루션 도입 사업 제안요청서 사전공개</span></a></div>
+					<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+					<div class="ctrl">
+						<button type="button" class="prev memo-prev" tabindex="0" aria-label="Previous slide" aria-controls="myView" aria-disabled="false">
+							<i class="ctrl-prev"></i>
+							<span class="sr-only">이전 내가 본 콘텐츠 보기</span>
+						</button>
+						<div class="swiper-pagination swiper-pagination-fraction swiper-pagination-horizontal"><span class="swiper-pagination-current">0</span> / <span class="swiper-pagination-total">0</span></div>
+						<button type="button" class="next memo-next" tabindex="0" aria-label="Next slide" aria-controls="myView" aria-disabled="false">
+							<i class="ctrl-next"></i>
+							<span class="sr-only">다음 내가 본 콘텐츠 보기</span>
+						</button>
+					</div>
+					<button type="button" class="b-close close" title="내가 본 콘텐츠 닫기"></button>
+				</div>
+			</div>
+			<!-- //내가 본 콘텐츠	-->
+
+
+			<!-- 맨 위로 -->
+			<div class="goTop">
+				<a href="javascript:void(0);">
+					<span class="sr-only">페이지 위로 이동</span>
+				</a>
+			</div>
+
+		</main>
+	</div>
+</body>
+</html>

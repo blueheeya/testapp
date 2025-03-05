@@ -545,7 +545,7 @@ button {
 .ico-right-bl {
     display: inline-block;
     vertical-align: middle;
-    background: url("https://static-cdn.bok.or.kr/static/imer/img/sprite.png");
+    background: url("/static/imer/img/sprite.png");
     background-position: -368px -120px;
     width: 20px;
     height: 20px;
@@ -561,6 +561,7 @@ button {
     }
     .ognztn .row ul li {
         width: calc(50% - 8px);
+        min-width: auto;
     }
     .ognztn .row ul li::before {
         top:-50%;
@@ -640,8 +641,6 @@ button {
     .ognztn .row ul li:nth-child(8) {
         order: 6;
     }
-}
-@media (max-width: 746px) {
 }
 @media (max-width: 375px) {
     .ognztn ol::before {
